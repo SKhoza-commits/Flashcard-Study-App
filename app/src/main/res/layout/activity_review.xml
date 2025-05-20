@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bc_gradient">
+
+    <!-- Review Content Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_marginBottom="24dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/reviewTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="8dp"/>
+        </ScrollView>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Restart Button with enhanced click feedback -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/restartButton"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESTART QUIZ"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/purple_500"
+        app:cornerRadius="12dp"
+        android:layout_marginHorizontal="32dp"
+        android:paddingVertical="16dp"
+        app:icon="@android:drawable/ic_popup_sync"
+        app:iconTint="@android:color/white"
+        android:stateListAnimator="@null"
+        app:rippleColor="@color/white_alpha_30"/>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/bc_gradient">
+
+    <!-- Question Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_marginBottom="32dp"
+        android:layout_marginHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/questionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:padding="24dp"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Answer Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/trueButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TRUE"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/green_correct"
+            app:cornerRadius="12dp"
+            android:layout_marginEnd="8dp"
+            android:paddingVertical="16dp"
+            app:icon="@android:drawable/checkbox_on_background"
+            app:iconTint="@android:color/white"
+            android:stateListAnimator="@null"
+            app:rippleColor="@color/white_alpha_30"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/falseButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FALSE"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/red_incorrect"
+            app:cornerRadius="12dp"
+            android:paddingVertical="16dp"
+            app:icon="@android:drawable/ic_notification_clear_all"
+            app:iconTint="@android:color/white"
+            android:stateListAnimator="@null"
+            app:rippleColor="@color/white_alpha_30"/>
+    </LinearLayout>
+
+    <!-- Next Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT QUESTION"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/purple_500"
+        app:cornerRadius="12dp"
+        android:layout_marginHorizontal="32dp"
+        android:paddingVertical="16dp"
+        app:icon="@android:drawable/ic_media_next"
+        app:iconTint="@android:color/white"
+        android:stateListAnimator="@null"
+        app:rippleColor="@color/white_alpha_30"
+        android:enabled="false"/>
+</LinearLayout>

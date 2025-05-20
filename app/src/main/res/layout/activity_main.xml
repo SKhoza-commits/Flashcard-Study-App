@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/bc_gradient">
+
+    <!-- App Icon -->
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@android:drawable/ic_menu_help"
+        android:layout_marginBottom="16dp"
+        app:tint="@android:color/white"/>
+
+    <!-- App Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flashcard Study App"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Description Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        android:layout_marginHorizontal="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚀 Ready to Test Your Brain Power?\n\nDive into the fastest way to learn! Master 5 true/false questions.\n\n🏆 Think you've got what it takes?"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:lineSpacingExtra="6dp"
+            android:padding="20dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Start Button with enhanced click feedback -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/startButton"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Quiz"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        app:icon="@android:drawable/ic_media_play"
+        app:iconTint="@android:color/white"
+        app:backgroundTint="@color/purple_500"
+        app:cornerRadius="12dp"
+        android:layout_marginHorizontal="32dp"
+        android:paddingVertical="16dp"
+        android:stateListAnimator="@null"
+        app:rippleColor="@color/white_alpha_30"/>
+</LinearLayout>
