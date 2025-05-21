@@ -43,3 +43,6 @@ References
 
 	DeepSeek. (2024). DeepSeek Chat [Large language model]. https://chat.deepseek.com/a/chat/s/6b2a5816-2798-4cba-8df2-d95be11caf4e
 	GeeksforGeeks. Parallel Array. [Online]. Available at: https://www.geeksforgeeks.org/parallel-array/
+
+Word Doc Report: [Flashcard Study App.docx](https://github.com/user-attachments/files/20358716/Flashcard.Study.App.docx)
+
